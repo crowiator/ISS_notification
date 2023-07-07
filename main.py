@@ -43,7 +43,7 @@ def main():
     while True:
         time.sleep(60)
         if is_night() and is_iss_overhead():
-            email = "pokojnybojovnik22@gmail.com"
+            email = "IMPORT_EMAIL"
             with smtplib.SMTP("smtp.gmail.com") as connection:
                 connection.starttls()
                 connection.login(user=MY_EMAIL, password=PASSWORD)
